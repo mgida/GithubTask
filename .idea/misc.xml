@@ -4,9 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/custom_card_view.xml" value="0.1" />
+        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/custom_image_view.xml" value="0.15443840579710144" />
+        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/custom_views.xml" value="0.15443840579710144" />
+        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/follower_list_item.xml" value="0.1" />
+        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/following_list_item.xml" value="0.25" />
+        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/fragment_user_detail.xml" value="0.25" />
         <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/movie_load_state_adapter_footer.xml" value="0.12771739130434784" />
         <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/popular_movie_list_item.xml" value="0.12771739130434784" />
-        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/user_list_item.xml" value="0.67" />
+        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/user_list_item.xml" value="0.5" />
+        <entry key="..\:/nanodegree/Expanding/projects/GithubTask/app/src/main/res/layout/user_load_state_adapter_footer.xml" value="0.5" />
       </map>
     </option>
   </component>

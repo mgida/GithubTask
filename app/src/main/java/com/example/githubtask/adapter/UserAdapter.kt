@@ -11,15 +11,28 @@ import com.example.githubtask.data.model.UserModel
 import com.example.githubtask.databinding.UserListItemBinding
 
 
-class UserAdapter :
+class UserAdapter(private val listener: OnItemClickListener) :
     PagingDataAdapter<UserModel, UserAdapter.UserViewHolder>(DIFF_CALLBACK) {
 
+    interface OnItemClickListener {
+        fun onItemClick(userModel: UserModel)
+    }
 
     inner class UserViewHolder(private val binding: UserListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
+        init {
+            binding.root.setOnClickListener {
+                val position = bindingAdapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    val currentUser = getItem(position)
+                    currentUser?.let {
+                        listener.onItemClick(it)
+                    }
+                }
+            }
+        }
 
         fun bind(user: UserModel?) {
-
             binding.apply {
                 Glide.with(itemView)
                     .load(user?.avatar_url)
@@ -27,11 +40,10 @@ class UserAdapter :
                     .error(R.drawable.ic_launcher_foreground)
                     .into(imageViewUser)
 
-                tvUserLogin.text = user?.login
-                tvUserRepo.text = user?.organizations_url
+                tvUserLogin.text = user?.name
+                tvUserRepo.text = user?.repos_url
             }
         }
-
     }
 
     companion object {
@@ -43,7 +55,6 @@ class UserAdapter :
                 oldItem.id == newItem.id
         }
     }
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
         return UserViewHolder(
