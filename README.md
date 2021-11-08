@@ -3,15 +3,15 @@
 
 ## Tools :
        
-    * Kotlin
-    * MVVM
-    * Retrofit
-    * Paging 3
-    * viewModel , LiveData
-    * Navigation component 
-    * Hilt
-    * ViewBinding
-    * RecyclerView .. DiffUtil
+* Kotlin
+* MVVM
+* Retrofit
+* Paging 3
+* viewModel , LiveData
+* Navigation component 
+* Hilt
+* ViewBinding
+* RecyclerView .. DiffUtil
     
 ## Screens :
          
